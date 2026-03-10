@@ -418,16 +418,21 @@ a.btn-subscribe:hover { background: #f0c46a; }
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .edition-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .edition-img-wrap { max-width: 500px; margin: 0 auto; }
   .archive-grid { grid-template-columns: repeat(2, 1fr); }
   .future-banner { flex-direction: column; text-align: center; padding: 1.5rem; gap: 1rem; }
 }
 @media (max-width: 600px) {
+  .edition-layout { gap: 2rem; }
+  .edition-img-wrap { max-width: 100%; }
+  .edition-main-img { width: 100%; height: auto; }
   .archive-grid { grid-template-columns: 1fr; }
   .modal-hero-img { height: 200px; }
   .modal-body { padding: 1.5rem 1.5rem 2rem; }
   .modal-purchase { flex-direction: column; align-items: flex-start; }
   .btn-buy { width: 100%; text-align: center; }
   .showcase-caption { padding: 2.5rem 1.2rem 1.5rem; }
+  .showcase-img { max-height: 75vh; object-position: center top; }
 }
 </style>
 </head>
@@ -440,7 +445,7 @@ a.btn-subscribe:hover { background: #f0c46a; }
     <li><a href="#why" onclick="closeMobileMenu()">The Project</a></li>
     <li><a href="#subscribe" onclick="closeMobileMenu()">Subscribe</a></li>
     <li><a href="#current-edition" onclick="closeMobileMenu()">This Month</a></li>
-    <li><a href="#archive" onclick="closeMobileMenu()">Archive</a></li>
+    <!-- Archive hidden until ready: <li><a href="#archive" onclick="closeMobileMenu()">Archive</a></li> -->
     <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
     <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
   </ul>
@@ -602,7 +607,7 @@ a.btn-subscribe:hover { background: #f0c46a; }
 <section id="product-showcase">
   <img
     class="showcase-img"
-    src="assets/img/product_images-after_subscription_section.png"
+    src="assets/img/product-showcase.jpg"
     alt="The In Lumuss postcard, handwritten letter and stickers laid on a desk"
   />
   <div class="showcase-caption">
@@ -622,7 +627,7 @@ a.btn-subscribe:hover { background: #f0c46a; }
       <span class="edition-tag">April 2025 · Now Shipping</span>
       <img
         class="edition-main-img"
-        src="assets/img/Aprils_edition.png"
+        src="assets/img/aprils-edition.jpg"
         alt="April 2025 edition — Astrology Reflexions: postcard, letter and stickers"
       />
     </div>
@@ -648,7 +653,8 @@ a.btn-subscribe:hover { background: #f0c46a; }
   </div>
 </section>
 
-<!-- ══════════════════════════ ARCHIVE ════════════════════════════════ -->
+<!-- ══════════════════════════ ARCHIVE (hidden until ready) ══════════
+<!--ARCHIVE-START
 <section id="archive">
   <div class="container">
     <div class="archive-intro">
@@ -718,6 +724,7 @@ a.btn-subscribe:hover { background: #f0c46a; }
     </div>
   </div>
 </section>
+ARCHIVE-END-->
 
 <!-- ══════════════════════════ ABOUT ══════════════════════════════════ -->
 <section id="about">
