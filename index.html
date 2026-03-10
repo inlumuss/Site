@@ -653,78 +653,11 @@ a.btn-subscribe:hover { background: #f0c46a; }
   </div>
 </section>
 
-<!-- ══════════════════════════ ARCHIVE (hidden until ready) ══════════
-<!--ARCHIVE-START
+<!-- ARCHIVE SECTION — hidden until ready. To restore, remove the comment tags around the section.
 <section id="archive">
-  <div class="container">
-    <div class="archive-intro">
-      <p class="section-eyebrow">The Archive</p>
-      <h2 class="section-title">Past Editions</h2>
-      <p>Each theme becomes a permanent artefact. Click any edition to read about it and purchase the print, letter and sticker set directly.</p>
-    </div>
-
-    <div class="archive-grid">
-
-      <!-- Edition 01 -->
-      <div class="archive-card" onclick="openModal('modal-01')">
-        <div class="archive-img-wrap">
-          <img class="archive-img" src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=500&q=80" alt="The Alchemist's Garden"/>
-        </div>
-        <div class="archive-info">
-          <div class="archive-issue">Vol. I · Issue 01</div>
-          <div class="archive-title">The Alchemist's Garden</div>
-          <p class="archive-desc">Symbols of transmutation, the Emerald Tablet, and Paracelsian herbalism.</p>
-          <div class="archive-footer">
-            <span>€9.00</span>
-            <button class="archive-cta">View Edition</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Edition 02 -->
-      <div class="archive-card" onclick="openModal('modal-02')">
-        <div class="archive-img-wrap">
-          <img class="archive-img" src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?w=500&q=80" alt="Celestial Cartography"/>
-        </div>
-        <div class="archive-info">
-          <div class="archive-issue">Vol. I · Issue 02</div>
-          <div class="archive-title">Celestial Cartography</div>
-          <p class="archive-desc">Antique star atlases, the music of the spheres, and Renaissance astronomical instruments.</p>
-          <div class="archive-footer">
-            <span>€9.00</span>
-            <button class="archive-cta">View Edition</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Edition 03 -->
-      <div class="archive-card" onclick="openModal('modal-03')">
-        <div class="archive-img-wrap">
-          <img class="archive-img" src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?w=500&q=80" alt="The Language of Runes"/>
-        </div>
-        <div class="archive-info">
-          <div class="archive-issue">Vol. I · Issue 03</div>
-          <div class="archive-title">The Language of Runes</div>
-          <p class="archive-desc">Elder Futhark, Norse cosmology, and the mythology of the Eddas.</p>
-          <div class="archive-footer">
-            <span>€9.00</span>
-            <button class="archive-cta">View Edition</button>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /archive-grid -->
-
-    <div class="future-banner">
-      <div class="future-icon">🧥</div>
-      <div class="future-text">
-        <h4>Merch · Coming Soon</h4>
-        <p>Hoodies, tote bags, and fine stationery bearing the symbols of In Lumuss — original designs, printed on demand.</p>
-      </div>
-    </div>
-  </div>
+  ...
 </section>
-ARCHIVE-END-->
+-->
 
 <!-- ══════════════════════════ ABOUT ══════════════════════════════════ -->
 <section id="about">
@@ -785,88 +718,7 @@ ARCHIVE-END-->
 </footer>
 
 
-<!-- ══════════════════════ ARCHIVE MODALS ════════════════════════════
-     To update: swap the img src and edit the text for each edition.
-     To link Stripe: replace REPLACE_WITH_ARCHIVE_0X_LINK with your link.
-═══════════════════════════════════════════════════════════════════ -->
-
-<!-- MODAL 01 — The Alchemist's Garden -->
-<div class="archive-modal-overlay" id="modal-01" onclick="handleModalClick(event,'modal-01')">
-  <div class="archive-modal">
-    <button class="modal-close" onclick="closeModal('modal-01')">✕</button>
-    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=800&q=80" alt="The Alchemist's Garden"/>
-    <div class="modal-body">
-      <div class="modal-issue">Vol. I · Issue 01 · The Archive</div>
-      <h2 class="modal-title">The Alchemist's Garden</h2>
-      <p class="modal-description">An exploration of the symbolic language of alchemy — the Emerald Tablet, the great work of transmutation, and the botanical wisdom of Paracelsus. This edition traces how alchemists encoded spiritual knowledge into plants, minerals, and cryptic illustrations, and why their legacy still speaks to us today.</p>
-      <ul class="modal-includes">
-        <li>4x6 botanical illustration postcard print — hand-designed, ready to frame or gift</li>
-        <li>Knowledge letter with curated bibliography from alchemical literature</li>
-        <li>2–3 collector stickers featuring alchemical symbols and botanical motifs</li>
-      </ul>
-      <div class="modal-purchase">
-        <div>
-          <div class="modal-price"><sup>€</sup>9.00</div>
-          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
-        </div>
-        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_01_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
-      </div>
-      <p class="modal-stripe-note">Secure payment via Stripe</p>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL 02 — Celestial Cartography -->
-<div class="archive-modal-overlay" id="modal-02" onclick="handleModalClick(event,'modal-02')">
-  <div class="archive-modal">
-    <button class="modal-close" onclick="closeModal('modal-02')">✕</button>
-    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?w=800&q=80" alt="Celestial Cartography"/>
-    <div class="modal-body">
-      <div class="modal-issue">Vol. I · Issue 02 · The Archive</div>
-      <h2 class="modal-title">Celestial Cartography</h2>
-      <p class="modal-description">A journey through the great star atlases of the Renaissance — Bayer's Uranometria, Cellarius's Harmonia Macrocosmica — and the ancient idea that the heavens were a map of something greater. This edition explores the music of the spheres, early astronomical instruments, and the mystical dimension of the night sky.</p>
-      <ul class="modal-includes">
-        <li>4x6 celestial map postcard print — hand-designed, ready to frame or gift</li>
-        <li>Knowledge letter with curated bibliography from astronomical and hermetic sources</li>
-        <li>2–3 collector stickers featuring star charts and celestial symbols</li>
-      </ul>
-      <div class="modal-purchase">
-        <div>
-          <div class="modal-price"><sup>€</sup>9.00</div>
-          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
-        </div>
-        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_02_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
-      </div>
-      <p class="modal-stripe-note">Secure payment via Stripe</p>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL 03 — The Language of Runes -->
-<div class="archive-modal-overlay" id="modal-03" onclick="handleModalClick(event,'modal-03')">
-  <div class="archive-modal">
-    <button class="modal-close" onclick="closeModal('modal-03')">✕</button>
-    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?w=800&q=80" alt="The Language of Runes"/>
-    <div class="modal-body">
-      <div class="modal-issue">Vol. I · Issue 03 · The Archive</div>
-      <h2 class="modal-title">The Language of Runes</h2>
-      <p class="modal-description">The Elder Futhark as a sacred alphabet, the cosmology of Yggdrasil, and the poetry of the Poetic Edda. This edition goes beyond the popular surface of Norse mythology to explore the runes as a genuine system of esoteric knowledge — their history, their use in divination, and their presence in Viking-age sacred art.</p>
-      <ul class="modal-includes">
-        <li>4x6 runic illustration postcard print — hand-designed, ready to frame or gift</li>
-        <li>Knowledge letter with curated bibliography from Norse and runic scholarship</li>
-        <li>2–3 collector stickers featuring Elder Futhark symbols and Norse motifs</li>
-      </ul>
-      <div class="modal-purchase">
-        <div>
-          <div class="modal-price"><sup>€</sup>9.00</div>
-          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
-        </div>
-        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_03_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
-      </div>
-      <p class="modal-stripe-note">Secure payment via Stripe</p>
-    </div>
-  </div>
-</div>
+<!-- ARCHIVE MODALS — hidden until archive section is ready -->
 
 
 <!-- ═══════════════════════════ JS ════════════════════════════════════ -->
