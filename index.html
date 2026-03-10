@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ═══════════════════════════════════════════════════════
-     PRIMARY SEO
-════════════════════════════════════════════════════════ -->
 <title>In Lumuss — Monthly Esoteric Art & Knowledge Mail Club</title>
 <meta name="description" content="In Lumuss is a curated monthly mail club delivering esoteric art prints, handcrafted knowledge letters, and collector stickers inspired by ancient wisdom, alchemy, and occult history. Subscribe from €11.11/month.">
 <meta name="keywords" content="esoteric subscription box, occult art prints, alchemy mail club, esoteric knowledge, monthly art subscription, hermeticism prints, sacred geometry, occult stickers, esoteric letter, in lumuss">
@@ -14,9 +11,6 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://inlumuss.com/">
 
-<!-- ═══════════════════════════════════════════════════════
-     OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
-════════════════════════════════════════════════════════ -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://inlumuss.com/">
 <meta property="og:title" content="In Lumuss — Monthly Esoteric Art & Knowledge Mail Club">
@@ -27,19 +21,12 @@
 <meta property="og:site_name" content="In Lumuss">
 <meta property="og:locale" content="en_GB">
 
-<!-- ═══════════════════════════════════════════════════════
-     TWITTER / X CARD
-════════════════════════════════════════════════════════ -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@inlumuss">
-<meta name="twitter:creator" content="@inlumuss">
 <meta name="twitter:title" content="In Lumuss — Monthly Esoteric Art & Knowledge Mail Club">
 <meta name="twitter:description" content="A monthly ritual of hidden knowledge. Esoteric art prints, collector stickers & knowledge letters delivered to your door. Subscribe from €11.11/mo.">
 <meta name="twitter:image" content="https://inlumuss.com/og-image.jpg">
 
-<!-- ═══════════════════════════════════════════════════════
-     SCHEMA.ORG STRUCTURED DATA
-════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,9 +37,7 @@
       "name": "In Lumuss",
       "url": "https://inlumuss.com",
       "description": "A curated monthly mail club delivering esoteric art prints, illuminated knowledge letters, and collector stickers inspired by alchemy, hermeticism, and ancient wisdom.",
-      "sameAs": [
-        "https://instagram.com/inlumuss"
-      ]
+      "sameAs": ["https://instagram.com/in_lumuss"]
     },
     {
       "@type": "WebSite",
@@ -64,20 +49,12 @@
     {
       "@type": "Product",
       "name": "Epistola Europea — Monthly Subscription",
-      "description": "Monthly esoteric art print, knowledge letter with curated bibliography, and collector sticker set. Free shipping across Europe.",
+      "description": "Monthly esoteric art print (4x6), knowledge letter with curated bibliography, and collector sticker set. Free shipping across Europe.",
       "brand": { "@id": "https://inlumuss.com/#organization" },
       "offers": {
         "@type": "Offer",
         "price": "11.11",
         "priceCurrency": "EUR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "11.11",
-          "priceCurrency": "EUR",
-          "billingDuration": 1,
-          "billingIncrement": 1,
-          "unitCode": "MON"
-        },
         "availability": "https://schema.org/InStock",
         "url": "https://inlumuss.com/#subscribe"
       }
@@ -85,20 +62,12 @@
     {
       "@type": "Product",
       "name": "Epistola Mundi — Monthly Subscription",
-      "description": "Monthly esoteric art print, knowledge letter with curated bibliography, and collector sticker set. International shipping worldwide.",
+      "description": "Monthly esoteric art print (4x6), knowledge letter with curated bibliography, and collector sticker set. International shipping worldwide.",
       "brand": { "@id": "https://inlumuss.com/#organization" },
       "offers": {
         "@type": "Offer",
         "price": "12.12",
         "priceCurrency": "EUR",
-        "priceSpecification": {
-          "@type": "UnitPriceSpecification",
-          "price": "12.12",
-          "priceCurrency": "EUR",
-          "billingDuration": 1,
-          "billingIncrement": 1,
-          "unitCode": "MON"
-        },
         "availability": "https://schema.org/InStock",
         "url": "https://inlumuss.com/#subscribe"
       }
@@ -107,36 +76,375 @@
 }
 </script>
 
-<!-- ═══════════════════════════════════════════════════════
-     THEME & FAVICONS
-════════════════════════════════════════════════════════ -->
 <meta name="theme-color" content="#0a0806">
-<meta name="msapplication-TileColor" content="#0a0806">
-<!-- Replace with real favicon paths -->
 <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   EXTRA SECTIONS — product showcase · current edition · archive
+   These styles sit on top of your existing styles.css
+══════════════════════════════════════════════════════════════ */
+
+/* ── Subscribe buttons become <a> links ── */
+a.btn-subscribe {
+  display: block;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #0a0806 !important;
+  background: #DCA241;
+  border: none;
+  padding: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+a.btn-subscribe:hover { background: #f0c46a; }
+
+/* ── PRODUCT SHOWCASE (full-width image after subscribe) ── */
+#product-showcase {
+  position: relative;
+  overflow: hidden;
+  background: #120f0a;
+  padding: 0;
+}
+.showcase-img {
+  width: 100%;
+  max-height: 88vh;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9);
+}
+.showcase-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 4rem 2rem 2.5rem;
+  background: linear-gradient(to top, rgba(10,8,6,0.88) 0%, transparent 100%);
+  text-align: center;
+  pointer-events: none;
+}
+.showcase-caption p {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 2.8vw, 1.35rem);
+  color: #E3DFCF;
+  opacity: 0.9;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+.showcase-caption p em { color: #DCA241; font-style: normal; }
+
+/* ── CURRENT EDITION ── */
+#current-edition {
+  padding: 5.5rem 1.5rem;
+  position: relative;
+  background: linear-gradient(135deg, #0e0b07 0%, #150f08 50%, #0a0806 100%);
+}
+#current-edition::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, #DCA241, transparent);
+  opacity: 0.25;
+}
+.edition-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4.5rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.edition-img-wrap { position: relative; }
+.edition-tag {
+  position: absolute;
+  top: -0.9rem; left: 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #0a0806;
+  background: #DCA241;
+  padding: 0.3rem 1rem;
+  z-index: 2;
+}
+.edition-main-img {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(220,162,65,0.2);
+}
+.edition-text .section-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #DCA241;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+  display: block;
+}
+.edition-text .section-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  color: #E3DFCF;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+.edition-month {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  color: #DCA241;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+.edition-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #E3DFCF;
+  opacity: 0.78;
+  margin-bottom: 1.2rem;
+}
+.edition-text p em { color: #DCA241; font-style: italic; }
+.edition-contents {
+  list-style: none;
+  margin: 1.5rem 0 2rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(220,162,65,0.12);
+  border-bottom: 1px solid rgba(220,162,65,0.12);
+}
+.edition-contents li {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  padding: 0.45rem 0;
+  color: #E3DFCF;
+  opacity: 0.75;
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+.edition-contents li::before {
+  content: '✦';
+  color: #DCA241;
+  font-size: 0.55rem;
+  margin-top: 0.38rem;
+  flex-shrink: 0;
+}
+.edition-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.45;
+  color: #E3DFCF;
+  margin-top: 0.8rem;
+}
+
+/* ── ARCHIVE ── */
+#archive {
+  padding: 5.5rem 1.5rem;
+  position: relative;
+  background: #0a0806;
+}
+#archive::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, #DCA241, transparent);
+  opacity: 0.25;
+}
+.archive-intro { max-width: 560px; margin-bottom: 3.5rem; }
+.archive-intro p { opacity: 0.72; font-size: 1rem; color: #E3DFCF; }
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.archive-card {
+  border: 1px solid rgba(220,162,65,0.12);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s, border-color 0.4s;
+  background: #0f0b06;
+}
+.archive-card:hover { transform: translateY(-5px); border-color: rgba(220,162,65,0.4); }
+.archive-img-wrap { overflow: hidden; height: 210px; }
+.archive-img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  filter: sepia(22%) brightness(0.78);
+  transition: filter 0.4s, transform 0.5s;
+}
+.archive-card:hover .archive-img { filter: sepia(0%) brightness(0.95); transform: scale(1.05); }
+.archive-info { padding: 1.3rem; }
+.archive-issue {
+  font-family: 'Cinzel', serif;
+  font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: #DCA241; opacity: 0.7; margin-bottom: 0.35rem;
+}
+.archive-title {
+  font-family: 'IM Fell English', serif;
+  font-size: 1.1rem; color: #E3DFCF; margin-bottom: 0.4rem;
+}
+.archive-desc { font-size: 0.84rem; opacity: 0.58; margin-bottom: 1rem; line-height: 1.55; color: #E3DFCF; }
+.archive-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Cinzel', serif; color: #DCA241; font-size: 0.95rem;
+}
+.archive-cta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: #0a0806; background: #DCA241;
+  border: none; padding: 0.45rem 1rem; cursor: pointer;
+  transition: background 0.3s;
+}
+.archive-cta:hover { background: #f0c46a; }
+
+.future-banner {
+  margin-top: 3.5rem;
+  border: 1px solid rgba(220,162,65,0.13);
+  padding: 1.8rem 2.2rem;
+  display: flex; align-items: center; gap: 1.5rem;
+  background: linear-gradient(to right, rgba(220,162,65,0.03), transparent);
+}
+.future-icon { font-size: 2.2rem; flex-shrink: 0; }
+.future-text h4 {
+  font-family: 'Cinzel', serif; font-size: 0.7rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: #DCA241; margin-bottom: 0.4rem;
+}
+.future-text p { font-size: 0.92rem; opacity: 0.62; color: #E3DFCF; }
+
+/* ── ARCHIVE MODAL ── */
+.archive-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.86);
+  z-index: 980;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.5rem;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s;
+}
+.archive-modal-overlay.open { opacity: 1; pointer-events: all; }
+.archive-modal {
+  background: #130f09;
+  border: 1px solid rgba(220,162,65,0.25);
+  max-width: 680px; width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(24px);
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  -webkit-overflow-scrolling: touch;
+}
+.archive-modal-overlay.open .archive-modal { transform: translateY(0); }
+.modal-close {
+  position: absolute; top: 1rem; right: 1rem;
+  background: none; border: none;
+  color: #E3DFCF; font-size: 1.3rem;
+  cursor: pointer; opacity: 0.5; transition: opacity 0.3s;
+  z-index: 2; line-height: 1; padding: 0.3rem;
+}
+.modal-close:hover { opacity: 1; }
+.modal-hero-img {
+  width: 100%; height: 260px;
+  object-fit: cover; display: block;
+  filter: sepia(15%) brightness(0.85);
+}
+.modal-body { padding: 2rem 2rem 2.5rem; }
+.modal-issue {
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase;
+  color: #DCA241; opacity: 0.75; margin-bottom: 0.6rem;
+}
+.modal-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: #E3DFCF; margin-bottom: 1rem; line-height: 1.2;
+}
+.modal-description {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; line-height: 1.85;
+  color: #E3DFCF; opacity: 0.78; margin-bottom: 1.5rem;
+}
+.modal-includes {
+  list-style: none; margin-bottom: 2rem;
+  border-top: 1px solid rgba(220,162,65,0.12);
+  padding-top: 1.2rem;
+}
+.modal-includes li {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem; padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(227,223,207,0.06);
+  opacity: 0.75; display: flex; gap: 0.7rem; align-items: flex-start;
+  color: #E3DFCF;
+}
+.modal-includes li::before { content: '✦'; color: #DCA241; font-size: 0.55rem; margin-top: 0.38rem; flex-shrink: 0; }
+.modal-purchase {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(220,162,65,0.15);
+}
+.modal-price { font-family: 'Cinzel', serif; font-size: 2rem; color: #DCA241; line-height: 1; }
+.modal-price sup { font-size: 0.85rem; vertical-align: super; }
+.modal-price-note { font-size: 0.78rem; opacity: 0.45; color: #E3DFCF; margin-top: 0.2rem; }
+.btn-buy {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: #0a0806; background: #DCA241;
+  border: none; padding: 1rem 2.2rem; cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none; display: inline-block;
+}
+.btn-buy:hover { background: #f0c46a; transform: translateY(-2px); }
+.modal-stripe-note {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.3; text-align: center; margin-top: 1rem; color: #E3DFCF;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .edition-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .archive-grid { grid-template-columns: repeat(2, 1fr); }
+  .future-banner { flex-direction: column; text-align: center; padding: 1.5rem; gap: 1rem; }
+}
+@media (max-width: 600px) {
+  .archive-grid { grid-template-columns: 1fr; }
+  .modal-hero-img { height: 200px; }
+  .modal-body { padding: 1.5rem 1.5rem 2rem; }
+  .modal-purchase { flex-direction: column; align-items: flex-start; }
+  .btn-buy { width: 100%; text-align: center; }
+  .showcase-caption { padding: 2.5rem 1.2rem 1.5rem; }
+}
+</style>
 </head>
 <body>
 
+<!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
 <nav id="mainNav">
   <a href="#hero" class="nav-logo">In Lumuss</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#why" onclick="closeMobileMenu()">The Project</a></li>
     <li><a href="#subscribe" onclick="closeMobileMenu()">Subscribe</a></li>
+    <li><a href="#current-edition" onclick="closeMobileMenu()">This Month</a></li>
     <li><a href="#archive" onclick="closeMobileMenu()">Archive</a></li>
     <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
     <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <button class="cart-btn" onclick="openCart()">
-      ✦ <span class="cart-label">Cart</span>
-      <span class="cart-count" id="cartCount">0</span>
-    </button>
     <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -144,6 +452,7 @@
 </nav>
 <div class="mobile-menu-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
 
+<!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
 <section id="hero">
   <div class="hero-bg"></div>
   <svg class="star-canvas" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
@@ -200,40 +509,43 @@
   </div>
 </section>
 
+<!-- ════════════════════════════ GALLERY ══════════════════════════════ -->
 <section id="gallery" style="padding:0;">
   <div class="mosaic">
-    <div class="mosaic-item mi1"><img class="mosaic-img" src="assets/img/IMAGE GRID-ASTRAL 2.png" alt="Ancient library"/><div class="mosaic-overlay"></div></div>
-    <div class="mosaic-item mi2"><img class="mosaic-img" src="assets/img/IMAGE GRIDastrologa 2.png" alt="Celestial maps"/><div class="mosaic-overlay"></div></div>
-    <div class="mosaic-item mi3"><img class="mosaic-img" src="assets/img/IMAGE GRIDA-strologa.png" alt="Castle"/><div class="mosaic-overlay"></div></div>
-    <div class="mosaic-item mi4"><img class="mosaic-img" src="assets/img/IMAGE GRID-BOOK.png" alt="Manuscripts"/><div class="mosaic-overlay"></div></div>
-    <div class="mosaic-item mi5"><img class="mosaic-img" src="assets/img/IMAGE GRID-LIBRARY.png" alt="Books"/><div class="mosaic-overlay"></div></div>
+    <div class="mosaic-item mi1"><img class="mosaic-img" src="assets/img/IMAGE GRID-ASTRAL 2.png" alt="Astral"/><div class="mosaic-overlay"></div></div>
+    <div class="mosaic-item mi2"><img class="mosaic-img" src="assets/img/IMAGE GRIDastrologa 2.png" alt="Astrologa"/><div class="mosaic-overlay"></div></div>
+    <div class="mosaic-item mi3"><img class="mosaic-img" src="assets/img/IMAGE GRIDA-strologa.png" alt="Astrologa 2"/><div class="mosaic-overlay"></div></div>
+    <div class="mosaic-item mi4"><img class="mosaic-img" src="assets/img/IMAGE GRID-BOOK.png" alt="Book"/><div class="mosaic-overlay"></div></div>
+    <div class="mosaic-item mi5"><img class="mosaic-img" src="assets/img/IMAGE GRID-LIBRARY.png" alt="Library"/><div class="mosaic-overlay"></div></div>
     <div class="mosaic-item mi6"><img class="mosaic-img" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&q=80" alt="Old text"/><div class="mosaic-overlay"></div></div>
     <div class="mosaic-item mi7"><img class="mosaic-img" src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400&q=80" alt="Globe"/><div class="mosaic-overlay"></div></div>
     <div class="mosaic-item mi8"><img class="mosaic-img" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80" alt="Library hall"/><div class="mosaic-overlay"></div></div>
   </div>
 </section>
 
+<!-- ════════════════════════════ WHY ══════════════════════════════════ -->
 <section id="why">
   <div class="container">
     <div class="why-grid">
       <div class="why-text">
         <p class="section-eyebrow">The Project</p>
         <h2 class="section-title">Why In Lumuss?</h2>
-        <p>There exists a vast, largely unexplored library of human thought — stretching from Alexandrian papyri to Renaissance alchemical manuscripts, from Sufi mystical poetry to Enlightenment-era star charts. <em>In Lumuss</em> was born from a conviction that this knowledge deserves to live again.</p>
+        <p><em>In Lumuss</em> was born from a conviction that this knowledge deserves to live again.</p>
         <p>Every month, we dive deep into a single theme — Hermeticism, sacred geometry, forgotten mythologies, the history of astronomy — and distil it into something <em>tangible and beautiful</em> that arrives at your door.</p>
-        <p>Each envelope holds an <em>art print of museum quality</em>, designed by hand, doubling as wall art or a treasured gift. A handwritten-style letter with curated bibliography. And original stickers drawn from the same symbolic universe.</p>
+        <p>Each envelope holds a <em>4x6 art print</em> related to the topic of the month, doubling as wall art or a treasured gift. A handwritten-style letter with curated bibliography, and original stickers or craft drawn from the same symbolic universe.</p>
         <p>This is not a subscription to content. <em>It is an invitation to a way of seeing.</em></p>
       </div>
       <div class="why-pillars">
         <div class="pillar"><span class="pillar-icon">🖋</span><h4>Knowledge Letters</h4><p>A beautifully composed letter exploring the month's esoteric theme with bibliography from scholarly literature and rare texts.</p></div>
         <div class="pillar"><span class="pillar-icon">🎴</span><h4>Art Prints</h4><p>Original hand-designed prints, rich in symbolism. Frame them, gift them, or use them as a ritual object of focus.</p></div>
         <div class="pillar"><span class="pillar-icon">✨</span><h4>Collector Stickers</h4><p>A curated set tied to the monthly theme — occult symbols, botanical illustrations, celestial maps.</p></div>
-        <div class="pillar"><span class="pillar-icon">🏛</span><h4>The Archive</h4><p>Past  never disappear. Browse and purchase older print themes to complete your collection.</p></div>
+        <div class="pillar"><span class="pillar-icon">🏛</span><h4>The Archive</h4><p>Past editions never disappear. Browse and purchase older print themes to complete your collection.</p></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ══════════════════════════ SUBSCRIBE ══════════════════════════════ -->
 <section id="subscribe">
   <div class="container">
     <div class="subscribe-intro">
@@ -242,78 +554,161 @@
       <p>Two rites of passage — one for Europa's old light, one for seekers across every meridian. Both include the full monthly bundle delivered to your threshold.</p>
     </div>
     <div class="plans-grid">
+
+      <!-- EUROPE ── replace href with your Stripe Payment Link -->
       <div class="plan-card">
-        <span class="plan-badge">Europe</span>
+        <span class="plan-badge">Mail Club · Europe</span>
         <div class="plan-name">Epistola Europea</div>
         <div class="plan-region">For European seekers</div>
         <div class="plan-price"><sup>€</sup>11<span style="font-size:1.3rem">.11</span></div>
         <div class="plan-cadence">per month · cancel anytime</div>
         <ul class="plan-features">
-          <li>Monthly esoteric art print (A5 / postcard)</li>
+          <li>Monthly esoteric art print (4x6 / postcard)</li>
           <li>Knowledge letter with curated bibliography</li>
-          <li>Collector sticker set (3–4 stickers)</li>
+          <li>Collector sticker set (2–3 stickers)</li>
           <li>Curated theme each moon cycle</li>
           <li>Free shipping across Europe</li>
           <li>Early access to archive purchases</li>
         </ul>
-        <button class="btn-subscribe" onclick="addToCart('Europe Subscription — Epistola Europea', 11.11, '€', 'europe-sub')">Subscribe — €11.11/mo</button>
+        <a href="https://buy.stripe.com/fZu6oG0w0btMbUU5g0a7C01" target="_blank" class="btn-subscribe">Subscribe — €11.11/mo</a>
       </div>
+
+      <!-- GLOBAL ── replace href with your Stripe Payment Link -->
       <div class="plan-card">
-        <span class="plan-badge">Global</span>
+        <span class="plan-badge">Mail Club · Global</span>
         <div class="plan-name">Epistola Mundi</div>
         <div class="plan-region">Worldwide delivery</div>
         <div class="plan-price"><sup>€</sup>12<span style="font-size:1.3rem">.12</span></div>
         <div class="plan-cadence">per month · cancel anytime</div>
         <ul class="plan-features">
-          <li>Monthly esoteric art print (A5 / postcard)</li>
+          <li>Monthly esoteric art print (4x6 / postcard)</li>
           <li>Knowledge letter with curated bibliography</li>
-          <li>Collector sticker set (3–4 stickers)</li>
+          <li>Collector sticker set (2–3 stickers)</li>
           <li>Curated theme each moon cycle</li>
           <li>International shipping worldwide</li>
           <li>Early access to archive purchases</li>
         </ul>
-        <button class="btn-subscribe" onclick="addToCart('Global Subscription — Epistola Mundi', 12.12, '€', 'global-sub')">Subscribe — €12.12/mo</button>
+        <a href="https://buy.stripe.com/14A28q3Ic7dwcYYfUEa7C02" target="_blank" class="btn-subscribe">Subscribe — €12.12/mo</a>
       </div>
+
     </div>
   </div>
 </section>
 
-<!--<section id="archive"> 
+<!-- ══════════════════════ PRODUCT SHOWCASE ═══════════════════════════
+     Full-width mood image right after Subscribe.
+     File: assets/img/product_images-after_subscription_section.png
+     ─────────────────────────────────────────────────────────────── -->
+<section id="product-showcase">
+  <img
+    class="showcase-img"
+    src="assets/img/product_images-after_subscription_section.png"
+    alt="The In Lumuss postcard, handwritten letter and stickers laid on a desk"
+  />
+  <div class="showcase-caption">
+    <p>A <em>postcard</em> you'll want to frame. A <em>letter</em> worth keeping. <em>Stickers</em> that carry a symbol into your everyday life. Arriving at your door every month.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════ CURRENT EDITION ════════════════════════════
+     Shows the current month's theme.
+     TO UPDATE EACH MONTH: change the text below and swap the image src.
+     File: assets/img/Aprils_edition.png
+     ─────────────────────────────────────────────────────────────── -->
+<section id="current-edition">
+  <div class="edition-layout">
+
+    <div class="edition-img-wrap">
+      <span class="edition-tag">April 2025 · Now Shipping</span>
+      <img
+        class="edition-main-img"
+        src="assets/img/Aprils_edition.png"
+        alt="April 2025 edition — Astrology Reflexions: postcard, letter and stickers"
+      />
+    </div>
+
+    <div class="edition-text">
+      <span class="section-eyebrow">This Month's Edition</span>
+      <h2 class="section-title">Astrology Reflexions</h2>
+      <p class="edition-month">April 2025</p>
+
+      <p>This month we trace the deep history of <em>astrology</em> — from the first zodiac symbols carved in Egyptian temples, to the armillary spheres of Renaissance astronomers, to the language of the sky that has guided seekers for millennia.</p>
+      <p>Each element of this edition is a small archive: the postcard depicts an astronomer at her telescope before an ancient clock tower at night; the letter walks through the history of astrological thought with curated bibliography; and the stickers carry the symbols of the discipline forward.</p>
+
+      <ul class="edition-contents">
+        <li>4x6 postcard print — astronomical night scene, ready to frame or send</li>
+        <li>Knowledge letter — Astrology: History, Symbols & the Armillary Sphere</li>
+        <li>2–3 collector stickers — astrolabe, celestial symbols, In Lumuss raven</li>
+      </ul>
+
+      <a href="#subscribe" class="btn-primary" style="display:inline-block; text-decoration:none;">Subscribe to Receive This Edition</a>
+      <p class="edition-note">Subscribe before the end of April to receive this month's bundle.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════ ARCHIVE ════════════════════════════════ -->
+<section id="archive">
   <div class="container">
     <div class="archive-intro">
-       <p class="section-eyebrow">The Archive</p> 
+      <p class="section-eyebrow">The Archive</p>
       <h2 class="section-title">Past Editions</h2>
-      <p>Each theme becomes a permanent artefact. Browse the growing archive and acquire prints and sticker sets from previous months.</p>
+      <p>Each theme becomes a permanent artefact. Click any edition to read about it and purchase the print, letter and sticker set directly.</p>
     </div>
+
     <div class="archive-grid">
-      <div class="archive-card">
-        <img class="archive-img" src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=500&q=80" alt="Alchemical symbols"/>
+
+      <!-- Edition 01 -->
+      <div class="archive-card" onclick="openModal('modal-01')">
+        <div class="archive-img-wrap">
+          <img class="archive-img" src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=500&q=80" alt="The Alchemist's Garden"/>
+        </div>
         <div class="archive-info">
           <div class="archive-issue">Vol. I · Issue 01</div>
           <div class="archive-title">The Alchemist's Garden</div>
-          <p class="archive-desc">Symbols of transmutation, the Emerald Tablet, Paracelsian herbalism. Botanical illustration print.</p>
-          <div class="archive-price"><span>€9.00</span><button class="btn-add" onclick="addToCart('Archive: The Alchemist\'s Garden', 9.00, '€', 'archive-1')">+ Add</button></div>
+          <p class="archive-desc">Symbols of transmutation, the Emerald Tablet, and Paracelsian herbalism.</p>
+          <div class="archive-footer">
+            <span>€9.00</span>
+            <button class="archive-cta">View Edition</button>
+          </div>
         </div>
       </div>
-      <div class="archive-card">
-        <img class="archive-img" src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?w=500&q=80" alt="Celestial astronomy"/>
+
+      <!-- Edition 02 -->
+      <div class="archive-card" onclick="openModal('modal-02')">
+        <div class="archive-img-wrap">
+          <img class="archive-img" src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?w=500&q=80" alt="Celestial Cartography"/>
+        </div>
         <div class="archive-info">
           <div class="archive-issue">Vol. I · Issue 02</div>
           <div class="archive-title">Celestial Cartography</div>
-          <p class="archive-desc">Antique star atlases, the music of the spheres, Renaissance astronomical instruments.</p>
-          <div class="archive-price"><span>€9.00</span><button class="btn-add" onclick="addToCart('Archive: Celestial Cartography', 9.00, '€', 'archive-2')">+ Add</button></div>
+          <p class="archive-desc">Antique star atlases, the music of the spheres, and Renaissance astronomical instruments.</p>
+          <div class="archive-footer">
+            <span>€9.00</span>
+            <button class="archive-cta">View Edition</button>
+          </div>
         </div>
       </div>
-      <div class="archive-card">
-        <img class="archive-img" src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?w=500&q=80" alt="Runes manuscript"/>
+
+      <!-- Edition 03 -->
+      <div class="archive-card" onclick="openModal('modal-03')">
+        <div class="archive-img-wrap">
+          <img class="archive-img" src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?w=500&q=80" alt="The Language of Runes"/>
+        </div>
         <div class="archive-info">
           <div class="archive-issue">Vol. I · Issue 03</div>
           <div class="archive-title">The Language of Runes</div>
-          <p class="archive-desc">Elder Futhark, Norse cosmology, the mythology of the Eddas.</p>
-          <div class="archive-price"><span>€9.00</span><button class="btn-add" onclick="addToCart('Archive: The Language of Runes', 9.00, '€', 'archive-3')">+ Add</button></div>
+          <p class="archive-desc">Elder Futhark, Norse cosmology, and the mythology of the Eddas.</p>
+          <div class="archive-footer">
+            <span>€9.00</span>
+            <button class="archive-cta">View Edition</button>
+          </div>
         </div>
       </div>
-    </div>
+
+    </div><!-- /archive-grid -->
+
     <div class="future-banner">
       <div class="future-icon">🧥</div>
       <div class="future-text">
@@ -322,15 +717,15 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
-
+<!-- ══════════════════════════ ABOUT ══════════════════════════════════ -->
 <section id="about">
   <div class="container">
     <div class="about-layout">
       <div class="about-portrait">
         <div class="portrait-frame">
-          <div class="mosaic-item mi3"><img class="archive-img" src="assets/img/a.jpeg"/></div>
+          <div class="mosaic-item mi3"><img class="archive-img" src="assets/img/a.jpeg" alt="Eli Reyes — In Lumuss curator"/></div>
           <div class="portrait-corner tl"></div>
           <div class="portrait-corner tr"></div>
           <div class="portrait-corner bl"></div>
@@ -340,9 +735,11 @@
       <div class="about-text">
         <p class="section-eyebrow">The Curator</p>
         <h2 class="section-title">About Me</h2>
-        <p>I have spent years wandering the corridors of <em>great libraries</em> — the Bodleian, the Biblioteca Nazionale, the dusty shelves of second-hand bookshops in cities I barely remember — drawn by a recurring feeling that there is something worth recovering in the old texts.</p>
+        <p>Hi! My name is <em>Eli Reyes</em> — a philosophical woman living in Belgium, born in Mexico with deep cultural roots in esoteric and spiritual ritual culture.</p>
+        <p>I have studies in Business Operations and B2B Marketing, but my dream is to run this mail club to spread the word about occult topics I find very relevant in life. <em>Information is an important tool to get to know ourselves.</em> All they didn't teach us at school!</p>
+        <p>I love esoteric illustrations and art, so this is my intent for sharing this passion with you — encouraging reflection from all the dusty shelves of second-hand bookshops, libraries and classes in cities I barely remember.</p>
         <div class="about-quote">"The beginning of wisdom is the discovery of our own ignorance."<br><small style="font-size:0.8em;opacity:0.6;">— attributed to William Durant</small></div>
-        <p>In Lumuss grew from a desire to share that feeling — to make <em>esoteric and occult history</em> approachable, beautiful, and tangible. I design each print by hand, research each theme with care, and write each letter as if writing to a close friend.</p>
+        <p>In Lumuss grew from a desire to share that feeling — to make <em>esoteric and occult history</em> approachable, beautiful, and tangible. I research each theme with care, create the print and write each letter as if I am writing to a close friend, wishing to share my findings and reflection.</p>
         <p>The name comes from old Latin: <em>in lux</em>, into the light. Everything here is an attempt to illuminate a corner of the world that has been allowed to grow dark.</p>
         <a href="#contact" class="btn-outline" style="margin-top:1rem;display:inline-block;">Get in Touch</a>
       </div>
@@ -350,6 +747,7 @@
   </div>
 </section>
 
+<!-- ═════════════════════════ CONTACT ════════════════════════════════ -->
 <section id="contact">
   <div class="container">
     <div class="contact-inner">
@@ -360,48 +758,143 @@
         <a href="https://www.instagram.com/in_lumuss?igsh=cDA0MGFyM3Zlc3Q1&utm_source=qr" target="_blank" class="contact-link">
           <span class="contact-link-icon">📸</span>
           <span class="contact-link-label">Instagram</span>
-          <span class="contact-link-value">@in_luminuss</span>
+          <span class="contact-link-value">@in_lumuss</span>
         </a>
-        <a href="mailto:inlumuss@gmail.com" class="contact-link">
+        <a href="mailto:hello@inlumuss.com" class="contact-link">
           <span class="contact-link-icon">✉</span>
           <span class="contact-link-label">Email</span>
-          <span class="contact-link-value">inlumuss@gmail.com</span>
+          <span class="contact-link-value">hello@inlumuss.com</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════════ -->
 <footer>
   <div class="footer-logo">In Lumuss</div>
   <div class="footer-copy">© 2025 In Lumuss · All rights reserved</div>
   <div class="footer-copy" style="opacity:0.18;">Into the light of ancient wisdom</div>
 </footer>
 
-<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
-<div class="cart-drawer" id="cartDrawer">
-  <div class="cart-header">
-    <h3>Your Selection</h3>
-    <button class="cart-close" onclick="closeCart()">✕</button>
-  </div>
-  <div class="cart-items" id="cartItems">
-    <div class="cart-empty" id="cartEmpty">
-      <span>☽</span>
-      <p>Your cart is empty</p>
+
+<!-- ══════════════════════ ARCHIVE MODALS ════════════════════════════
+     To update: swap the img src and edit the text for each edition.
+     To link Stripe: replace REPLACE_WITH_ARCHIVE_0X_LINK with your link.
+═══════════════════════════════════════════════════════════════════ -->
+
+<!-- MODAL 01 — The Alchemist's Garden -->
+<div class="archive-modal-overlay" id="modal-01" onclick="handleModalClick(event,'modal-01')">
+  <div class="archive-modal">
+    <button class="modal-close" onclick="closeModal('modal-01')">✕</button>
+    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1567473030492-533b30c5494c?w=800&q=80" alt="The Alchemist's Garden"/>
+    <div class="modal-body">
+      <div class="modal-issue">Vol. I · Issue 01 · The Archive</div>
+      <h2 class="modal-title">The Alchemist's Garden</h2>
+      <p class="modal-description">An exploration of the symbolic language of alchemy — the Emerald Tablet, the great work of transmutation, and the botanical wisdom of Paracelsus. This edition traces how alchemists encoded spiritual knowledge into plants, minerals, and cryptic illustrations, and why their legacy still speaks to us today.</p>
+      <ul class="modal-includes">
+        <li>4x6 botanical illustration postcard print — hand-designed, ready to frame or gift</li>
+        <li>Knowledge letter with curated bibliography from alchemical literature</li>
+        <li>2–3 collector stickers featuring alchemical symbols and botanical motifs</li>
+      </ul>
+      <div class="modal-purchase">
+        <div>
+          <div class="modal-price"><sup>€</sup>9.00</div>
+          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
+        </div>
+        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_01_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
+      </div>
+      <p class="modal-stripe-note">Secure payment via Stripe</p>
     </div>
-  </div>
-  <div class="cart-footer">
-    <div id="cartSubNote" class="cart-sub-note">↻ Subscription · Renews monthly — cancel anytime via Stripe</div>
-    <div class="cart-total">
-      <span class="cinzel" style="letter-spacing:0.12em;font-size:0.68rem;text-transform:uppercase;opacity:0.55;">Total</span>
-      <span class="cart-total-price" id="cartTotal">€0.00</span>
-    </div>
-    <button class="btn-checkout" id="checkoutBtn" onclick="goToCheckout()" disabled>✦ Proceed to Checkout</button>
-    <p style="font-size:0.7rem;opacity:0.35;text-align:center;margin-top:0.8rem;font-family:'Cinzel',serif;letter-spacing:0.1em;">Powered by Stripe · Secure Payment</p>
   </div>
 </div>
-<div class="notification" id="notification"></div>
 
-  <script src="assets/js/script.js"></script>
+<!-- MODAL 02 — Celestial Cartography -->
+<div class="archive-modal-overlay" id="modal-02" onclick="handleModalClick(event,'modal-02')">
+  <div class="archive-modal">
+    <button class="modal-close" onclick="closeModal('modal-02')">✕</button>
+    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?w=800&q=80" alt="Celestial Cartography"/>
+    <div class="modal-body">
+      <div class="modal-issue">Vol. I · Issue 02 · The Archive</div>
+      <h2 class="modal-title">Celestial Cartography</h2>
+      <p class="modal-description">A journey through the great star atlases of the Renaissance — Bayer's Uranometria, Cellarius's Harmonia Macrocosmica — and the ancient idea that the heavens were a map of something greater. This edition explores the music of the spheres, early astronomical instruments, and the mystical dimension of the night sky.</p>
+      <ul class="modal-includes">
+        <li>4x6 celestial map postcard print — hand-designed, ready to frame or gift</li>
+        <li>Knowledge letter with curated bibliography from astronomical and hermetic sources</li>
+        <li>2–3 collector stickers featuring star charts and celestial symbols</li>
+      </ul>
+      <div class="modal-purchase">
+        <div>
+          <div class="modal-price"><sup>€</sup>9.00</div>
+          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
+        </div>
+        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_02_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
+      </div>
+      <p class="modal-stripe-note">Secure payment via Stripe</p>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 03 — The Language of Runes -->
+<div class="archive-modal-overlay" id="modal-03" onclick="handleModalClick(event,'modal-03')">
+  <div class="archive-modal">
+    <button class="modal-close" onclick="closeModal('modal-03')">✕</button>
+    <img class="modal-hero-img" src="https://images.unsplash.com/photo-1601342630314-8427c38bf5e6?w=800&q=80" alt="The Language of Runes"/>
+    <div class="modal-body">
+      <div class="modal-issue">Vol. I · Issue 03 · The Archive</div>
+      <h2 class="modal-title">The Language of Runes</h2>
+      <p class="modal-description">The Elder Futhark as a sacred alphabet, the cosmology of Yggdrasil, and the poetry of the Poetic Edda. This edition goes beyond the popular surface of Norse mythology to explore the runes as a genuine system of esoteric knowledge — their history, their use in divination, and their presence in Viking-age sacred art.</p>
+      <ul class="modal-includes">
+        <li>4x6 runic illustration postcard print — hand-designed, ready to frame or gift</li>
+        <li>Knowledge letter with curated bibliography from Norse and runic scholarship</li>
+        <li>2–3 collector stickers featuring Elder Futhark symbols and Norse motifs</li>
+      </ul>
+      <div class="modal-purchase">
+        <div>
+          <div class="modal-price"><sup>€</sup>9.00</div>
+          <div class="modal-price-note">One-time purchase · Ships worldwide</div>
+        </div>
+        <a href="https://buy.stripe.com/REPLACE_WITH_ARCHIVE_03_LINK" target="_blank" class="btn-buy">✦ Purchase this Edition</a>
+      </div>
+      <p class="modal-stripe-note">Secure payment via Stripe</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════ JS ════════════════════════════════════ -->
+<script>
+  /* Mobile menu */
+  function toggleMobileMenu() {
+    const links = document.getElementById('navLinks');
+    links.classList.toggle('mobile-open');
+    document.getElementById('hamburger').classList.toggle('active');
+    document.getElementById('mobileOverlay').classList.toggle('show');
+    document.body.style.overflow = links.classList.contains('mobile-open') ? 'hidden' : '';
+  }
+  function closeMobileMenu() {
+    document.getElementById('navLinks').classList.remove('mobile-open');
+    document.getElementById('hamburger').classList.remove('active');
+    document.getElementById('mobileOverlay').classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  /* Archive modals */
+  function openModal(id) {
+    document.getElementById(id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function handleModalClick(e, id) {
+    if (e.target === document.getElementById(id)) closeModal(id);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') ['modal-01','modal-02','modal-03'].forEach(closeModal);
+  });
+</script>
+
 </body>
 </html>
